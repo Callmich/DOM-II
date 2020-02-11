@@ -16,3 +16,11 @@ document.querySelectorAll('nav a').forEach(el => {
         el.style.color = "black";
     })
 })
+
+addEventListener('keydown', ()=>{
+    document.body.style.backgroundColor = 'yellow';
+})
+
+addEventListener('keyup', ()=>{
+    document.body.style.backgroundColor = 'white';
+})
