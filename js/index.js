@@ -41,3 +41,13 @@ window.addEventListener('scroll', ()=>{
     allText.style.color = 'red';
 })
 
+window.addEventListener('resize', ()=>{
+    allText.style.display = 'none'
+})
+
+document.querySelectorAll('.text-content').forEach(el => {
+    el.addEventListener('contextmenu', ()=>{
+        el.style.backgroundColor = 'black'
+    })
+})
+
