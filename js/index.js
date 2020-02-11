@@ -51,3 +51,20 @@ document.querySelectorAll('.text-content').forEach(el => {
     })
 })
 
+destBG = document.querySelector('.destination');
+btnBG = document.querySelector('.btn');
+
+destBG.addEventListener('mousedown', () => {
+    destBG.style.backgroundColor = 'black'
+})
+
+btnBG.addEventListener('mousedown', (event) => {
+    event.stopPropagation();
+    btnBG.style.backgroundColor = 'black'
+})
+
+document.querySelectorAll('.nav-link').forEach(el => {
+    el.addEventListener('click', (event) => {
+        event.preventDefault();
+    })
+})
