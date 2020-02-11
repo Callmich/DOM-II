@@ -24,3 +24,14 @@ addEventListener('keydown', ()=>{
 addEventListener('keyup', ()=>{
     document.body.style.backgroundColor = 'white';
 })
+
+const bigBus = document.querySelector('.intro img');
+
+bigBus.addEventListener('click', ()=>{
+     bigBus.src= 'img/scaryBus.jpg'
+});
+
+bigBus.addEventListener('dblclick', ()=>{
+    bigBus.src= 'img/fun-bus.jpg'
+})
+
